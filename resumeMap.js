@@ -29,7 +29,7 @@ function zoomTo(num) {
   resume_markers[num].openPopup();
 }
 
-function main(map, tiles, data, resume, title, description) {
+function resume_template(map, tiles, data, resume, title, description) {
   tiles.addTo(map);
   for (x in data) {
     var popup_content =
@@ -61,7 +61,7 @@ function main(map, tiles, data, resume, title, description) {
 };
 
 //execute
-var app = main(
+var app = resume_template(
   map = map_object,
   tiles = map_tile_object,
   data = resumeData,
