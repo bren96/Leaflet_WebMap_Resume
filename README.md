@@ -4,15 +4,19 @@ Brendan Cullen
 2019
 
 ## Description
-Interactive Resume Map Template using Leaflet's open-source Javascript library. Can be used to embed a resume-like webmap into a webpage. The template is added as a control div within the map object. Uses GeoJSON to display resume information.
+Interactive Resume Map Template using Leaflet's open-source Javascript library.
+Can be used to embed a resume-like webmap into a webpage. The template is added
+as a control div within the map object. Uses GeoJSON to display resume
+information.
 
 ## Configure
 
-resumeData.js, resumeMap.js, and resumeMap.css contain the functions and styling needed to create the template. Below are snippets from the example.
+resumeData.js, resumeMap.js, and resumeMap.css contain the functions and styling
+needed to create the template. Below are snippets from the example.
 
 ### Leaflet
 
-Follow set up instructions at [Leaflet]()
+Follow set up instructions at [Leaflet](https://leafletjs.com/)
 
 ### index.html
 
@@ -38,7 +42,10 @@ Insert the following in the body of the document.
 
 There are two functions in resumeMap.js, resume_template() and zoomTo().
 
-resume_template() adds the map tile object to the map, creates the popup content based off of resumeData.js, and binds it to a new marker layer. The markers are then added to the map. The control div is then created with a title and general description. Buttons are also added to the div based off of resumeData.js.
+resume_template() adds the map tile object to the map, creates the popup content
+based off of resumeData.js, and binds it to a new marker layer. The markers are
+then added to the map. The control div is then created with a title and general
+description. Buttons are also added to the div based off of resumeData.js.
 
 This snippet from the example shows the required inputs for resume_template().
 
@@ -53,7 +60,8 @@ var app = resume_template(
 )
 ```
 
-zoomTo() changes the view of the map when a position's button is clicked in the resume div. The coordinates are stored in resumeData.js.
+zoomTo() changes the view of the map when a position's button is clicked in the
+resume div. The coordinates are stored in resumeData.js.
 
 ### resumeMap.css
 
@@ -105,7 +113,9 @@ This snippet shows the styling used in the example.
 
 ### resumeData.js
 
-GeoJSON file containing the resume information. Each object is added as an individual marker and added as a button in the control div.
+GeoJSON file containing the resume information. Each object is added as an
+individual marker and added as a button in the control div.
+
 ```
 var resumeData = [{
     "type": "Feature",
@@ -141,7 +151,7 @@ var resumeData = [{
 
 ## Example
 
-[Basic Example]()
+[Basic Example](https://bren96.github.io/Leaflet_Resume_Template/)
 
 [Full Example](https://bren96.github.io/CullenCartography/#experiencemap)
 
