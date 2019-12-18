@@ -13,7 +13,11 @@
 
 
 //variables
-var map_object = L.map('mapid', {closePopupOnClick: false});
+var map_object = L.map('mapid',{
+  center: [0,0],
+  zoom: 2,
+  closePopupOnClick: false
+});
 var map_tile_object = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 {foo: 'bar', attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'});
 var resume_markers = []
