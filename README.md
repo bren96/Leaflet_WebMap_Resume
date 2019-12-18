@@ -128,7 +128,7 @@ var resumeData = [{
     },
     "geometry": {
       "type": "Point",
-      "coordinates": [-83.176256, 41.114445]
+      "coordinates": [-83.650238, 41.039131]
     }
   },
 
